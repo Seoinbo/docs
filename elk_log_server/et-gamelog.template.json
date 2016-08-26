@@ -1,0 +1,933 @@
+{
+  "template" : "et-gamelog-*",
+  "settings" : {
+    "index" : {
+      "refresh_interval" : "5s",
+      "number_of_replicas" : "1",
+      "number_of_shards" : "10"
+    }
+  },
+  "mappings": {
+    "_default_": {
+      "properties" : {
+        "@timestamp" : {
+          "type": "date",
+          "format": "strict_date_optional_time||epoch_millis"
+        },
+        "@version" : {
+          "type": "string"
+        },
+        "EventDate": {
+          "type": "string"
+        },
+        "LogType": {
+          "type": "integer"
+        },
+        "AccountIdx": {
+          "type": "integer"
+        },
+        "AccountID": {
+          "type": "string"
+        },
+        "MakeCodeNo": {
+          "type": "integer"
+        },
+        "Device": {
+          "type": "string"
+        },
+        "DeviceType": {
+          "type": "byte"
+        },
+        "CharName": {
+          "type": "string"
+        },
+        "IP": {
+          "type": "string"
+        }
+      }  
+    },
+    "301": {
+      "properties" : {
+        "@timestamp" : {
+          "type": "date",
+          "format": "strict_date_optional_time||epoch_millis"
+        },
+        "@version" : {
+          "type": "string"
+        },
+        "EventDate": {
+          "type": "string"
+        },
+        "LogType": {
+          "type": "integer"
+        },
+        "AccountIdx": {
+          "type": "integer"
+        },
+        "AccountID": {
+          "type": "string"
+        },
+        "MakeCodeNo": {
+          "type": "integer"
+        },
+        "Device": {
+          "type": "string"
+        },
+        "DeviceType": {
+          "type": "byte"
+        },
+        "CharName": {
+          "type": "string"
+        },
+        "IP": {
+          "type": "string"
+        },
+        "PastLevel": {
+          "type": "interger"
+        },
+        "CurrentLevel": {
+          "type": "byte"
+        },
+        "StructureName": {
+          "type": "string"
+        }
+      }
+    },
+    "401": {
+      "properties" : {
+        "@timestamp" : {
+          "type": "date",
+          "format": "strict_date_optional_time||epoch_millis"
+        },
+        "@version" : {
+          "type": "string"
+        },
+        "EventDate": {
+          "type": "string"
+        },
+        "LogType": {
+          "type": "integer"
+        },
+        "AccountIdx": {
+          "type": "integer"
+        },
+        "AccountID": {
+          "type": "string"
+        },
+        "MakeCodeNo": {
+          "type": "integer"
+        },
+        "Device": {
+          "type": "string"
+        },
+        "DeviceType": {
+          "type": "byte"
+        },
+        "CharName": {
+          "type": "string"
+        },
+        "IP": {
+          "type": "string"
+        },
+        "GetResource": {
+          "type": "integer"
+        },
+        "CharResource": {
+          "type": "integer"
+        },
+        "ItemID": {
+          "type": "integer"
+        },
+        "ItemName": {
+          "type": "string"
+        },
+        "ItemCount": {
+          "type": "integer"
+        },
+        "CharItemCount": {
+          "type": "integer"
+        },
+        "WithAccountID": {
+          "type": "string"
+        },
+        "WithCharName": {
+          "type": "string"
+        },
+        "Etc": {
+          "type": "string"
+        },
+        "GetGold": {
+          "type": "integer"
+        },
+        "CharGold": {
+          "type": "integer"
+        },
+        "GetHeart": {
+          "type": "integer"
+        },
+        "CharHeart": {
+          "type": "integer"
+        },
+        "GetSeed": {
+          "type": "integer"
+        },
+        "CharSeed": {
+          "type": "integer"
+        },
+        "TownNumber": {
+          "type": "integer"
+        },
+        "Setting": {
+          "type": "integer"
+        },
+        "AcquireType": {
+          "type": "integer"
+        }
+      }
+    },
+    "501": {
+      "properties" : {
+        "@timestamp" : {
+          "type": "date",
+          "format": "strict_date_optional_time||epoch_millis"
+        },
+        "@version" : {
+          "type": "string"
+        },
+        "EventDate": {
+          "type": "string"
+        },
+        "LogType": {
+          "type": "integer"
+        },
+        "AccountIdx": {
+          "type": "integer"
+        },
+        "AccountID": {
+          "type": "string"
+        },
+        "MakeCodeNo": {
+          "type": "integer"
+        },
+        "Device": {
+          "type": "string"
+        },
+        "DeviceType": {
+          "type": "byte"
+        },
+        "CharName": {
+          "type": "string"
+        },
+        "IP": {
+          "type": "string"
+        },
+        "StructureID": {
+          "type": "integer"
+        },
+        "SturctureSerial": {
+          "type": "long"
+        },
+        "StructureName": {
+          "type": "string"
+        },
+        "StructureCount": {
+          "type": "integer"
+        },
+        "StructureType": {
+          "type": "integer"
+        },
+        "AllStructureCount": {
+          "type": "integer"
+        },
+        "WithAccountID": {
+          "type": "string"
+        },
+        "WithCharName": {
+          "type": "string"
+        },
+        "Acquire": {
+          "type": "integer"
+        },
+        "Etc": {
+          "type": "string"
+        },
+        "TownNumber": {
+          "type": "integer"
+        },
+        "Setting": {
+          "type": "integer"
+        }
+      }
+    },
+    "601": {
+      "properties" : {
+        "@timestamp" : {
+        "type": "date",
+        "format": "strict_date_optional_time||epoch_millis"
+        },
+        "@version" : {
+        "type": "string"
+        },
+        "EventDate": {
+        "type": "string"
+        },
+        "LogType": {
+        "type": "integer"
+        },
+        "AccountIdx": {
+        "type": "integer"
+        },
+        "AccountID": {
+        "type": "string"
+        },
+        "MakeCodeNo": {
+        "type": "integer"
+        },
+        "Device": {
+        "type": "string"
+        },
+        "DeviceType": {
+        "type": "byte"
+        },
+        "CharName": {
+        "type": "string"
+        },
+        "IP": {
+        "type": "string"
+        },
+        "CharLevel": {
+        "type": "integer"
+        },
+        "ToCharName": {
+        "type": "string"
+        },
+        "ToCharLevel": {
+        "type": "integer"
+        },
+        "PlayTime": {
+        "type": "integer"
+        },
+        "Farmstaytype": {
+        "type": "integer"
+        },
+        "AddFriendtype": {
+        "type": "integer"
+        }
+      }
+    },
+    "801": {
+      "properties" : {
+        "@timestamp" : {
+          "type": "date",
+          "format": "strict_date_optional_time||epoch_millis"
+        },
+        "@version" : {
+          "type": "string"
+        },
+        "EventDate": {
+          "type": "string"
+        },
+        "LogType": {
+          "type": "integer"
+        },
+        "AccountIdx": {
+          "type": "integer"
+        },
+        "AccountID": {
+          "type": "string"
+        },
+        "MakeCodeNo": {
+          "type": "integer"
+        },
+        "Device": {
+          "type": "string"
+        },
+        "DeviceType": {
+          "type": "byte"
+        },
+        "CharName": {
+          "type": "string"
+        },
+        "IP": {
+          "type": "string"
+        },
+        "CharLevel": {
+          "type": "integer"
+        },
+        "QuestID": {
+          "type": "integer"
+        },
+        "QuestType": {
+          "type": "integer"
+        },
+        "GetExp": {
+          "type": "integer"
+        },
+        "CharExp": {
+          "type": "integer"
+        },
+        "GetGold": {
+          "type": "integer"
+        },
+        "CharGold": {
+          "type": "integer"
+        },
+        "GetSeed": {
+          "type": "integer"
+        },
+        "CharSeed": {
+          "type": "integer"
+        },
+        "GetItemID1": {
+          "type": "integer"
+        },
+        "GetItemName1": {
+          "type": "string"
+        },
+        "GetItemCount1": {
+          "type": "integer"
+        },
+        "GetItemID2": {
+          "type": "integer"
+        },
+        "GetItemName2": {
+          "type": "string"
+        },
+        "GetItemCount2": {
+          "type": "integer"
+        }
+      }
+    },
+    "902": {
+      "properties" : {
+        "@timestamp" : {
+          "type": "date",
+          "format": "strict_date_optional_time||epoch_millis"
+        },
+        "@version" : {
+          "type": "string"
+        },
+        "EventDate": {
+          "type": "string"
+        },
+        "LogType": {
+          "type": "integer"
+        },
+        "AccountIdx": {
+          "type": "integer"
+        },
+        "AccountID": {
+          "type": "string"
+        },
+        "MakeCodeNo": {
+          "type": "integer"
+        },
+        "Device": {
+          "type": "string"
+        },
+        "DeviceType": {
+          "type": "byte"
+        },
+        "CharName": {
+          "type": "string"
+        },
+        "IP": {
+          "type": "string"
+        },
+        "LandMarkID": {
+          "type": "integer"
+        },
+        "LandMarkSerial": {
+          "type": "long"
+        },
+        "LandMarkName": {
+          "type": "string"
+        },
+        "StructureID": {
+          "type": "string"
+        },
+        "StructureName": {
+          "type": "long"
+        },
+        "StructureCount": {
+          "type": "integer"
+        },
+        "SpendGold": {
+          "type": "integer"
+        },
+        "CharGold": {
+          "type": "integer"
+        },
+        "PastLevel": {
+          "type": "integer"
+        },
+        "CurrentLevel": {
+          "type": "integer"
+        },
+        "PastCleanClass": {
+          "type": "integer"
+        },
+        "CurrentCleanClass": {
+          "type": "integer"
+        },
+        "Etc": {
+          "type": "string"
+        }
+      }
+    },
+    "903": {
+      "properties" : {
+        "@timestamp" : {
+          "type": "date",
+          "format": "strict_date_optional_time||epoch_millis"
+        },
+        "@version" : {
+          "type": "string"
+        },
+        "EventDate": {
+          "type": "string"
+        },
+        "LogType": {
+          "type": "integer"
+        },
+        "AccountIdx": {
+          "type": "integer"
+        },
+        "AccountID": {
+          "type": "string"
+        },
+        "MakeCodeNo": {
+          "type": "integer"
+        },
+        "Device": {
+          "type": "string"
+        },
+        "DeviceType": {
+          "type": "byte"
+        },
+        "CharName": {
+          "type": "string"
+        },
+        "IP": {
+          "type": "string"
+        },
+        "SpendGold": {
+          "type": "string"
+        },
+        "CharGold": {
+          "type": "string"
+        },
+        "SpendSeed": {
+          "type": "string"
+        },
+        "CharSeed": {
+          "type": "string"
+        },
+        "GuildName": {
+          "type": "string"
+        },
+        "GuildPosition": {
+          "type": "string"
+        },
+        "WithAccountID": {
+          "type": "string"
+        },
+        "WithCharName": {
+          "type": "string"
+        },
+        "GuildMember": {
+          "type": "string"
+        },
+        "Exposure": {
+          "type": "string"
+        },
+        "MyGuildScore": {
+          "type": "string"
+        },
+        "GuildScore": {
+          "type": "string"
+        },
+        "GuildRanking": {
+          "type": "string"
+        },
+        "Etc": {
+          "type": "string"
+        }
+      }
+    },
+    "904": {
+      "properties" : {
+        "@timestamp" : {
+          "type": "date",
+          "format": "strict_date_optional_time||epoch_millis"
+        },
+        "@version" : {
+          "type": "string"
+        },
+        "EventDate": {
+          "type": "string"
+        },
+        "LogType": {
+          "type": "integer"
+        },
+        "AccountIdx": {
+          "type": "integer"
+        },
+        "AccountID": {
+          "type": "string"
+        },
+        "MakeCodeNo": {
+          "type": "integer"
+        },
+        "Device": {
+          "type": "string"
+        },
+        "DeviceType": {
+          "type": "byte"
+        },
+        "CharName": {
+          "type": "string"
+        },
+        "IP": {
+          "type": "string"
+        },
+        "makingCount": {
+          "type": "integer"
+        },
+        "RewardItemID": {
+          "type": "integer"
+        },
+        "RewardItemSerial": {
+          "type": "long"
+        },
+        "RewardItemName": {
+          "type": "string"
+        },
+        "SpendSeed": {
+          "type": "integer"
+        },
+        "CharSeed": {
+          "type": "integer"
+        },
+        "SpendGold": {
+          "type": "integer"
+        },
+        "CharGold": {
+          "type": "integer"
+        },
+        "MakingType": {
+          "type": "integer"
+        },
+        "Etc": {
+          "type": "string"
+        }
+      }
+    },
+    "905": {
+      "properties" : {
+        "@timestamp" : {
+          "type": "date",
+          "format": "strict_date_optional_time||epoch_millis"
+        },
+        "@version" : {
+          "type": "string"
+        },
+        "EventDate": {
+          "type": "string"
+        },
+        "LogType": {
+          "type": "integer"
+        },
+        "AccountIdx": {
+          "type": "integer"
+        },
+        "AccountID": {
+          "type": "string"
+        },
+        "MakeCodeNo": {
+          "type": "integer"
+        },
+        "Device": {
+          "type": "string"
+        },
+        "DeviceType": {
+          "type": "byte"
+        },
+        "CharName": {
+          "type": "string"
+        },
+        "IP": {
+          "type": "string"
+        },
+        "ItemID": {
+          "type": "integer"
+        },
+        "ItemName": {
+          "type": "string"
+        },
+        "ItemCount": {
+          "type": "integer"
+        },
+        "CharItemCount": {
+          "type": "integer"
+        },
+        "villagerID1": {
+          "type": "integer"
+        },
+        "villagerName1": {
+          "type": "string"
+        },
+        "villagercondition1": {
+          "type": "integer"
+        },
+        "villagerID2": {
+          "type": "integer"
+        },
+        "villagerName2": {
+          "type": "string"
+        },
+        "villagercondition2": {
+          "type": "integer"
+        },
+        "SpendSeed": {
+          "type": "integer"
+        },
+        "CharSeed": {
+          "type": "integer"
+        },
+        "SpendGold": {
+          "type": "integer"
+        },
+        "CharGold": {
+          "type": "integer"
+        },
+        "SpendHeart": {
+          "type": "integer"
+        },
+        "CharHeart": {
+          "type": "integer"
+        },
+        "TradeItemID": {
+          "type": "integer"
+        },
+        "TradeItemName": {
+          "type": "string"
+        },
+        "AreaNumber": {
+          "type": "integer"
+        },
+        "SpotNumber": {
+          "type": "integer"
+        },
+        "CollectionType": {
+          "type": "integer"
+        },
+        "ConcertBuff": {
+          "type": "integer"
+        },
+        "Etc": {
+          "type": "string"
+        }
+      }
+    },
+    "906": {
+      "properties" : {
+        "@timestamp" : {
+          "type": "date",
+          "format": "strict_date_optional_time||epoch_millis"
+        },
+        "@version" : {
+          "type": "string"
+        },
+        "EventDate": {
+          "type": "string"
+        },
+        "LogType": {
+          "type": "integer"
+        },
+        "AccountIdx": {
+          "type": "integer"
+        },
+        "AccountID": {
+          "type": "string"
+        },
+        "MakeCodeNo": {
+          "type": "integer"
+        },
+        "Device": {
+          "type": "string"
+        },
+        "DeviceType": {
+          "type": "byte"
+        },
+        "CharName": {
+          "type": "string"
+        },
+        "IP": {
+          "type": "string"
+        },
+        "GuildName": {
+          "type": "string"
+        },
+        "GuildPosition": {
+          "type": "integer"
+        },
+        "GuildMember": {
+          "type": "integer"
+        },
+        "RewardItemType1": {
+          "type": "integer"
+        },
+        "RewardItemID1": {
+          "type": "integer"
+        },
+        "RewardItemName1": {
+          "type": "string"
+        },
+        "RewardItemCount1": {
+          "type": "integer"
+        },
+        "RewardItemType2": {
+          "type": "integer"
+        },
+        "RewardItemID2": {
+          "type": "integer"
+        },
+        "RewardItemName2": {
+          "type": "string"
+        },
+        "RewardItemCount2": {
+          "type": "integer"
+        },
+        "RewardItemType3": {
+          "type": "integer"
+        },
+        "RewardItemID3": {
+          "type": "integer"
+        },
+        "RewardItemName3": {
+          "type": "string"
+        },
+        "RewardItemCount3": {
+          "type": "integer"
+        },
+        "Etc": {
+          "type": "string"
+        }
+      }
+    },
+    "907": {
+      "properties" : {
+        "@timestamp" : {
+          "type": "date",
+          "format": "strict_date_optional_time||epoch_millis"
+        },
+        "@version" : {
+          "type": "string"
+        },
+        "EventDate": {
+          "type": "string"
+        },
+        "LogType": {
+          "type": "integer"
+        },
+        "AccountIdx": {
+          "type": "integer"
+        },
+        "AccountID": {
+          "type": "string"
+        },
+        "MakeCodeNo": {
+          "type": "integer"
+        },
+        "Device": {
+          "type": "string"
+        },
+        "DeviceType": {
+          "type": "byte"
+        },
+        "CharName": {
+          "type": "string"
+        },
+        "IP": {
+          "type": "string"
+        },
+        "ConcertItemID": {
+          "type": "integer"
+        },
+        "ConcertItemName": {
+          "type": "string"
+        },
+        "SpendSeed": {
+          "type": "integer"
+        },
+        "CharSeed": {
+          "type": "integer"
+        },
+        "SpendGold": {
+          "type": "integer"
+        },
+        "CharGold": {
+          "type": "integer"
+        },
+        "ConcertID": {
+          "type": "integer"
+        },
+        "ConcertName": {
+          "type": "string"
+        },
+        "ConcertBuff": {
+          "type": "integer"
+        },
+        "BuffItemID1": {
+          "type": "integer"
+        },
+        "BuffItemName1": {
+          "type": "string"
+        },
+        "BuffItemID2": {
+          "type": "integer"
+        },
+        "BuffItemName2": {
+          "type": "string"
+        },
+        "BuffItemID3": {
+          "type": "integer"
+        },
+        "BuffItemName3": {
+          "type": "string"
+        },
+        "StaffAccountID1": {
+          "type": "integer"
+        },
+        "StaffCharName1": {
+          "type": "string"
+        },
+        "StaffAccountID2": {
+          "type": "integer"
+        },
+        "StaffCharName2": {
+          "type": "string"
+        },
+        "StaffAccountID3": {
+          "type": "integer"
+        },
+        "StaffCharName3": {
+          "type": "string"
+        },
+        "StaffAccountID4": {
+          "type": "integer"
+        },
+        "StaffCharName4": {
+          "type": "string"
+        },
+        "Setting": {
+          "type": "integer"
+        },
+        "Etc": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
