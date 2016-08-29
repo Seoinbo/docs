@@ -14,8 +14,11 @@
           "type": "date",
           "format": "strict_date_optional_time||epoch_millis"
         },
-        "@version" : {
+        "@version": {
           "type": "string"
+        },
+        "LogNo": {
+          "type": "integer"
         },
         "EventDate": {
           "type": "string"
@@ -36,7 +39,7 @@
           "type": "string"
         },
         "DeviceType": {
-          "type": "byte"
+          "type": "integer"
         },
         "CharName": {
           "type": "string"
@@ -52,8 +55,11 @@
           "type": "date",
           "format": "strict_date_optional_time||epoch_millis"
         },
-        "@version" : {
+        "@version": {
           "type": "string"
+        },
+        "LogNo": {
+          "type": "integer"
         },
         "EventDate": {
           "type": "string"
@@ -74,7 +80,7 @@
           "type": "string"
         },
         "DeviceType": {
-          "type": "byte"
+          "type": "integer"
         },
         "CharName": {
           "type": "string"
@@ -83,10 +89,10 @@
           "type": "string"
         },
         "PastLevel": {
-          "type": "interger"
+          "type": "integer"
         },
         "CurrentLevel": {
-          "type": "byte"
+          "type": "integer"
         },
         "StructureName": {
           "type": "string"
@@ -99,8 +105,11 @@
           "type": "date",
           "format": "strict_date_optional_time||epoch_millis"
         },
-        "@version" : {
+        "@version": {
           "type": "string"
+        },
+        "LogNo": {
+          "type": "integer"
         },
         "EventDate": {
           "type": "string"
@@ -121,7 +130,7 @@
           "type": "string"
         },
         "DeviceType": {
-          "type": "byte"
+          "type": "integer"
         },
         "CharName": {
           "type": "string"
@@ -191,8 +200,11 @@
           "type": "date",
           "format": "strict_date_optional_time||epoch_millis"
         },
-        "@version" : {
+        "@version": {
           "type": "string"
+        },
+        "LogNo": {
+          "type": "integer"
         },
         "EventDate": {
           "type": "string"
@@ -213,7 +225,7 @@
           "type": "string"
         },
         "DeviceType": {
-          "type": "byte"
+          "type": "integer"
         },
         "CharName": {
           "type": "string"
@@ -222,7 +234,7 @@
           "type": "string"
         },
         "StructureID": {
-          "type": "integer"
+          "type": "string"
         },
         "SturctureSerial": {
           "type": "long"
@@ -259,14 +271,103 @@
         }
       }
     },
+    "502": {
+      "properties" : {
+        "@timestamp" : {
+          "type": "date",
+          "format": "strict_date_optional_time||epoch_millis"
+        },
+        "@version": {
+          "type": "string"
+        },
+        "LogNo": {
+          "type": "integer"
+        },
+        "EventDate": {
+          "type": "string"
+        },
+        "LogType": {
+          "type": "integer"
+        },
+        "AccountIdx": {
+          "type": "integer"
+        },
+        "AccountID": {
+          "type": "string"
+        },
+        "MakeCodeNo": {
+          "type": "integer"
+        },
+        "Device": {
+          "type": "string"
+        },
+        "DeviceType": {
+          "type": "integer"
+        },
+        "CharName": {
+          "type": "string"
+        },
+        "IP": {
+          "type": "string"
+        },
+        "RewardItemID": {
+          "type": "integer"
+        },
+        "RewardItemName": {
+          "type": "string"
+        },
+        "SpendSeed": {
+          "type": "integer"
+        },
+        "CharSeed": {
+          "type": "integer"
+        },
+        "SpendGold": {
+          "type": "integer"
+        },
+        "CharGold": {
+          "type": "integer"
+        },
+        "SpendHeart": {
+          "type": "integer"
+        },
+        "CharHeart": {
+          "type": "integer"
+        },
+        "TradeItemID1": {
+          "type": "integer"
+        },
+        "TradeItemName1": {
+          "type": "string"
+        },
+        "TradeItemCount1": {
+          "type": "integer"
+        },
+        "TradeItemID2": {
+          "type": "integer"
+        },
+        "TradeItemName2": {
+          "type": "string"
+        },
+        "TradeItemCount2": {
+          "type": "integer"
+        },
+        "Etc": {
+          "type": "string"
+        }
+      }
+    },
     "601": {
       "properties" : {
         "@timestamp" : {
         "type": "date",
         "format": "strict_date_optional_time||epoch_millis"
         },
-        "@version" : {
+        "@version": {
         "type": "string"
+        },
+        "LogNo": {
+          "type": "integer"
         },
         "EventDate": {
         "type": "string"
@@ -287,7 +388,7 @@
         "type": "string"
         },
         "DeviceType": {
-        "type": "byte"
+        "type": "integer"
         },
         "CharName": {
         "type": "string"
@@ -321,8 +422,11 @@
           "type": "date",
           "format": "strict_date_optional_time||epoch_millis"
         },
-        "@version" : {
+        "@version": {
           "type": "string"
+        },
+        "LogNo": {
+          "type": "integer"
         },
         "EventDate": {
           "type": "string"
@@ -343,7 +447,7 @@
           "type": "string"
         },
         "DeviceType": {
-          "type": "byte"
+          "type": "integer"
         },
         "CharName": {
           "type": "string"
@@ -404,8 +508,11 @@
           "type": "date",
           "format": "strict_date_optional_time||epoch_millis"
         },
-        "@version" : {
+        "@version": {
           "type": "string"
+        },
+        "LogNo": {
+          "type": "integer"
         },
         "EventDate": {
           "type": "string"
@@ -426,7 +533,7 @@
           "type": "string"
         },
         "DeviceType": {
-          "type": "byte"
+          "type": "integer"
         },
         "CharName": {
           "type": "string"
@@ -447,7 +554,7 @@
           "type": "string"
         },
         "StructureName": {
-          "type": "long"
+          "type": "string"
         },
         "StructureCount": {
           "type": "integer"
@@ -481,8 +588,11 @@
           "type": "date",
           "format": "strict_date_optional_time||epoch_millis"
         },
-        "@version" : {
+        "@version": {
           "type": "string"
+        },
+        "LogNo": {
+          "type": "integer"
         },
         "EventDate": {
           "type": "string"
@@ -503,7 +613,7 @@
           "type": "string"
         },
         "DeviceType": {
-          "type": "byte"
+          "type": "integer"
         },
         "CharName": {
           "type": "string"
@@ -512,22 +622,22 @@
           "type": "string"
         },
         "SpendGold": {
-          "type": "string"
+          "type": "integer"
         },
         "CharGold": {
-          "type": "string"
+          "type": "integer"
         },
         "SpendSeed": {
-          "type": "string"
+          "type": "integer"
         },
         "CharSeed": {
-          "type": "string"
+          "type": "integer"
         },
         "GuildName": {
           "type": "string"
         },
         "GuildPosition": {
-          "type": "string"
+          "type": "integer"
         },
         "WithAccountID": {
           "type": "string"
@@ -536,19 +646,19 @@
           "type": "string"
         },
         "GuildMember": {
-          "type": "string"
+          "type": "integer"
         },
         "Exposure": {
-          "type": "string"
+          "type": "integer"
         },
         "MyGuildScore": {
-          "type": "string"
+          "type": "integer"
         },
         "GuildScore": {
-          "type": "string"
+          "type": "integer"
         },
         "GuildRanking": {
-          "type": "string"
+          "type": "integer"
         },
         "Etc": {
           "type": "string"
@@ -561,8 +671,11 @@
           "type": "date",
           "format": "strict_date_optional_time||epoch_millis"
         },
-        "@version" : {
+        "@version": {
           "type": "string"
+        },
+        "LogNo": {
+          "type": "integer"
         },
         "EventDate": {
           "type": "string"
@@ -583,7 +696,7 @@
           "type": "string"
         },
         "DeviceType": {
-          "type": "byte"
+          "type": "integer"
         },
         "CharName": {
           "type": "string"
@@ -629,8 +742,11 @@
           "type": "date",
           "format": "strict_date_optional_time||epoch_millis"
         },
-        "@version" : {
+        "@version": {
           "type": "string"
+        },
+        "LogNo": {
+          "type": "integer"
         },
         "EventDate": {
           "type": "string"
@@ -651,7 +767,7 @@
           "type": "string"
         },
         "DeviceType": {
-          "type": "byte"
+          "type": "integer"
         },
         "CharName": {
           "type": "string"
@@ -736,8 +852,11 @@
           "type": "date",
           "format": "strict_date_optional_time||epoch_millis"
         },
-        "@version" : {
+        "@version": {
           "type": "string"
+        },
+        "LogNo": {
+          "type": "integer"
         },
         "EventDate": {
           "type": "string"
@@ -758,7 +877,7 @@
           "type": "string"
         },
         "DeviceType": {
-          "type": "byte"
+          "type": "integer"
         },
         "CharName": {
           "type": "string"
@@ -822,8 +941,11 @@
           "type": "date",
           "format": "strict_date_optional_time||epoch_millis"
         },
-        "@version" : {
+        "@version": {
           "type": "string"
+        },
+        "LogNo": {
+          "type": "integer"
         },
         "EventDate": {
           "type": "string"
@@ -844,7 +966,7 @@
           "type": "string"
         },
         "DeviceType": {
-          "type": "byte"
+          "type": "integer"
         },
         "CharName": {
           "type": "string"
