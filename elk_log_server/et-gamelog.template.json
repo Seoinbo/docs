@@ -360,59 +360,59 @@
     "601": {
       "properties" : {
         "@timestamp" : {
-        "type": "date",
-        "format": "strict_date_optional_time||epoch_millis"
+          "type": "date",
+          "format": "strict_date_optional_time||epoch_millis"
         },
         "@version": {
-        "type": "string"
+          "type": "string"
         },
         "LogNo": {
           "type": "integer"
         },
         "EventDate": {
-        "type": "string"
+          "type": "string"
         },
         "LogType": {
-        "type": "integer"
+          "type": "integer"
         },
         "AccountIdx": {
-        "type": "integer"
+          "type": "integer"
         },
         "AccountID": {
-        "type": "string"
+          "type": "string"
         },
         "MakeCodeNo": {
-        "type": "integer"
+          "type": "integer"
         },
         "Device": {
-        "type": "string"
+          "type": "string"
         },
         "DeviceType": {
-        "type": "integer"
+          "type": "integer"
         },
         "CharName": {
-        "type": "string"
+          "type": "string"
         },
         "IP": {
-        "type": "string"
+          "type": "string"
         },
         "CharLevel": {
-        "type": "integer"
+          "type": "integer"
         },
         "ToCharName": {
-        "type": "string"
+          "type": "string"
         },
         "ToCharLevel": {
-        "type": "integer"
+          "type": "integer"
         },
         "PlayTime": {
-        "type": "integer"
+          "type": "integer"
         },
         "Farmstaytype": {
-        "type": "integer"
+          "type": "integer"
         },
         "AddFriendtype": {
-        "type": "integer"
+          "type": "integer"
         }
       }
     },
