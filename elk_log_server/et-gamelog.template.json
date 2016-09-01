@@ -9,6 +9,10 @@
   },
   "mappings": {
     "_default_": {
+      "_ttl": {
+        "enabled": true,
+        "default": "180d"
+      },
       "properties" : {
         "@timestamp" : {
           "type": "date",
@@ -50,6 +54,10 @@
       }  
     },
     "301": {
+      "_ttl": {
+        "enabled": true,
+        "default": "180d"
+      },
       "properties" : {
         "@timestamp" : {
           "type": "date",
@@ -100,6 +108,10 @@
       }
     },
     "401": {
+      "_ttl": {
+        "enabled": true,
+        "default": "180d"
+      },
       "properties" : {
         "@timestamp" : {
           "type": "date",
@@ -195,6 +207,10 @@
       }
     },
     "501": {
+      "_ttl": {
+        "enabled": true,
+        "default": "180d"
+      },
       "properties" : {
         "@timestamp" : {
           "type": "date",
@@ -272,6 +288,10 @@
       }
     },
     "502": {
+      "_ttl": {
+        "enabled": true,
+        "default": "180d"
+      },
       "properties" : {
         "@timestamp" : {
           "type": "date",
@@ -358,6 +378,10 @@
       }
     },
     "601": {
+      "_ttl": {
+        "enabled": true,
+        "default": "180d"
+      },
       "properties" : {
         "@timestamp" : {
           "type": "date",
@@ -417,6 +441,10 @@
       }
     },
     "801": {
+      "_ttl": {
+        "enabled": true,
+        "default": "180d"
+      },
       "properties" : {
         "@timestamp" : {
           "type": "date",
@@ -503,6 +531,10 @@
       }
     },
     "902": {
+      "_ttl": {
+        "enabled": true,
+        "default": "180d"
+      },
       "properties" : {
         "@timestamp" : {
           "type": "date",
@@ -583,6 +615,10 @@
       }
     },
     "903": {
+      "_ttl": {
+        "enabled": true,
+        "default": "180d"
+      },
       "properties" : {
         "@timestamp" : {
           "type": "date",
@@ -666,6 +702,10 @@
       }
     },
     "904": {
+      "_ttl": {
+        "enabled": true,
+        "default": "180d"
+      },
       "properties" : {
         "@timestamp" : {
           "type": "date",
@@ -737,6 +777,10 @@
       }
     },
     "905": {
+      "_ttl": {
+        "enabled": true,
+        "default": "180d"
+      },
       "properties" : {
         "@timestamp" : {
           "type": "date",
@@ -847,6 +891,10 @@
       }
     },
     "906": {
+      "_ttl": {
+        "enabled": true,
+        "default": "180d"
+      },
       "properties" : {
         "@timestamp" : {
           "type": "date",
@@ -936,6 +984,10 @@
       }
     },
     "907": {
+      "_ttl": {
+        "enabled": true,
+        "default": "180d"
+      },
       "properties" : {
         "@timestamp" : {
           "type": "date",
